@@ -1,7 +1,9 @@
 package com.ztj.dongbao.portal.controller;
 
 
+import com.ztj.dongbao.base.annotations.TokenCheck;
 import com.ztj.dongbao.base.result.ResultWrapper;
+import com.ztj.dongbao.common.util.JwtUtil;
 import com.ztj.dongbao.ums.entity.UmsMember;
 import com.ztj.dongbao.ums.entity.dto.UmsMemberParamDTO;
 import com.ztj.dongbao.ums.service.UmsMemberService;
@@ -27,13 +29,27 @@ public class UmsMemberController {
     }
 
     @PostMapping("/register")
-    public ResultWrapper register(@RequestBody @Validated UmsMemberParamDTO umsMember){
+    public ResultWrapper<Object> register(@RequestBody @Validated UmsMemberParamDTO umsMember){
         // int i = 1/0;
-        return ResultWrapper.getSuccessBuilder().data(null).build();
+        return umsMemberService.register(umsMember);
     }
 
     @PostMapping("/login")
-    public String login(@RequestBody UmsMemberParamDTO umsMember){
-        return umsMemberService.login(umsMember);
+    public ResultWrapper<Object> login(@RequestBody UmsMemberParamDTO umsMemberParamDTO){
+        return umsMemberService.login(umsMemberParamDTO);
+    }
+
+    @PostMapping("/update")
+    @TokenCheck
+    public ResultWrapper<Object> update(@RequestBody UmsMember umsMember){
+        return umsMemberService.update(umsMember);
+    }
+
+
+    // 测试token
+    @GetMapping("test-verify")
+    public String verify(String token){
+        String token1 = JwtUtil.parseToken(token);
+        return token1;
     }
 }

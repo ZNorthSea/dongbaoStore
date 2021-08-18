@@ -1,6 +1,8 @@
 package com.ztj.dongbao.ums.service;
 
 
+import com.ztj.dongbao.base.result.ResultWrapper;
+import com.ztj.dongbao.ums.entity.UmsMember;
 import com.ztj.dongbao.ums.entity.dto.UmsMemberParamDTO;
 
 /**
@@ -10,6 +12,24 @@ import com.ztj.dongbao.ums.entity.dto.UmsMemberParamDTO;
  * @since 2021-08-16 00:37:16
  */
 public interface UmsMemberService {
-    String register(UmsMemberParamDTO umsMemberParamDTO);
-    String login(UmsMemberParamDTO umsMemberParamDTO);
+    /**
+     * 注册功能
+     * @param umsMemberParamDTO
+     * @return
+     */
+    ResultWrapper<Object> register(UmsMemberParamDTO umsMemberParamDTO);
+
+    /**
+     * 登陆功能
+     * @param umsMemberParamDTO
+     * @return
+     */
+    ResultWrapper<Object> login(UmsMemberParamDTO umsMemberParamDTO);
+
+    /**
+     * 修改功能
+     * @param umsMember
+     * @return
+     */
+    ResultWrapper<Object> update(UmsMember umsMember);
 }

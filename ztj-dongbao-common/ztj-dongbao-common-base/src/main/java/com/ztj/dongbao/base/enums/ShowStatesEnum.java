@@ -1,13 +1,32 @@
 package com.ztj.dongbao.base.enums;
 
+
 public enum ShowStatesEnum {
+    /**
+     * 请求成功
+     */
     SUCCESS(200,"请求成功"),
-    FAIL(500,"请求失败");
+    /**
+     * 请求失败
+     */
+    FAIL(500,"请求失败"),
+    /**
+     * 用户名密码不正确
+     */
+    PASSWORD_ERROR(1001,"用户名密码不正确"),
+    /**
+     * 用户不存在
+     */
+    USER_EMPTY(1002,"用户不存在"),
+    /**
+     * 用户名重复
+     */
+    USERNAME_REPEAD(1003,"用户名重复");
+
+
     private int code;
     private String msg;
 
-    ShowStatesEnum() {
-    }
 
     ShowStatesEnum(int code, String msg) {
         this.code = code;

@@ -1,4 +1,4 @@
-package com.ztj.dongbao.portal.exception;
+package com.ztj.dongbao.portal.advice;
 
 import com.ztj.dongbao.base.result.ResultWrapper;
 import org.springframework.http.HttpHeaders;

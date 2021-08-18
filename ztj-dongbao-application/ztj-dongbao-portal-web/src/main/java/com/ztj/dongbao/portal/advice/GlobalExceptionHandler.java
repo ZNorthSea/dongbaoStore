@@ -1,5 +1,6 @@
-package com.ztj.dongbao.portal.exception;
+package com.ztj.dongbao.portal.advice;
 
+import com.ztj.dongbao.base.exception.TokenException;
 import com.ztj.dongbao.base.result.ResultWrapper;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -12,6 +13,12 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(ArithmeticException.class)
     public ResultWrapper<Object> customerException(){
-        return new ResultWrapper().builder().code(500).msg("统一异常").build();
+        return ResultWrapper.getFailBuilder().msg("除零异常").build();
     }
+
+    @ExceptionHandler(TokenException.class)
+    public ResultWrapper<Object> tokenCheckException(Exception e){
+        return ResultWrapper.getFailBuilder().msg(e.getMessage()).build();
+    }
+
 }
