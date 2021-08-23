@@ -7,7 +7,7 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import java.util.Date;
 
 public class JwtUtil {
-    private static final String SECRET = "zhaotj";
+    private static final String SECRET = "zhaotj";  // 盐
 
     public static String createToken(String subject){
         String token = Jwts.builder().setSubject(subject)
@@ -18,7 +18,8 @@ public class JwtUtil {
     }
 
     public static String parseToken(String token){
-        Claims body = Jwts.parser().setSigningKey(SECRET).parseClaimsJws(token)
+        Claims body = Jwts.parser().setSigningKey(SECRET)
+                .parseClaimsJws(token)
                 .getBody();
         return body.getSubject();
     }

@@ -11,6 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
 
+/**
+ * 拦截器 验证token
+ */
 public class AuthInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request
@@ -37,7 +40,6 @@ public class AuthInterceptor implements HandlerInterceptor {
                 }
             }
         }
-
         return true;
     }
 

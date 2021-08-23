@@ -49,7 +49,6 @@ public class UmsMemberController {
     // 测试token
     @GetMapping("test-verify")
     public String verify(String token){
-        String token1 = JwtUtil.parseToken(token);
-        return token1;
+        return JwtUtil.parseToken(token);
     }
 }
