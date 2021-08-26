@@ -1,0 +1,12 @@
+/Users/beihai/IdeaProject/ztj-dongbao-mall-parent-v1/ztj-dongbao-application/ztj-dongbao-portal-web/src/main/java/com/ztj/dongbao/portal/controller/studyCaptcha/KCaptchaController.java
+/Users/beihai/IdeaProject/ztj-dongbao-mall-parent-v1/ztj-dongbao-application/ztj-dongbao-portal-web/src/main/java/com/ztj/dongbao/portal/interceptor/InterceptorConfig.java
+/Users/beihai/IdeaProject/ztj-dongbao-mall-parent-v1/ztj-dongbao-application/ztj-dongbao-portal-web/src/main/java/com/ztj/dongbao/portal/advice/ValidateHandler.java
+/Users/beihai/IdeaProject/ztj-dongbao-mall-parent-v1/ztj-dongbao-application/ztj-dongbao-portal-web/src/main/java/com/ztj/dongbao/portal/config/RedisConfig.java
+/Users/beihai/IdeaProject/ztj-dongbao-mall-parent-v1/ztj-dongbao-application/ztj-dongbao-portal-web/src/main/java/com/ztj/dongbao/portal/controller/UmsMemberController.java
+/Users/beihai/IdeaProject/ztj-dongbao-mall-parent-v1/ztj-dongbao-application/ztj-dongbao-portal-web/src/main/java/com/ztj/dongbao/portal/custom/MyGoogleKaptcha.java
+/Users/beihai/IdeaProject/ztj-dongbao-mall-parent-v1/ztj-dongbao-application/ztj-dongbao-portal-web/src/main/java/com/ztj/dongbao/portal/util/RedisUtil.java
+/Users/beihai/IdeaProject/ztj-dongbao-mall-parent-v1/ztj-dongbao-application/ztj-dongbao-portal-web/src/main/java/com/ztj/dongbao/portal/advice/GlobalExceptionHandler.java
+/Users/beihai/IdeaProject/ztj-dongbao-mall-parent-v1/ztj-dongbao-application/ztj-dongbao-portal-web/src/main/java/com/ztj/dongbao/portal/interceptor/AuthInterceptor.java
+/Users/beihai/IdeaProject/ztj-dongbao-mall-parent-v1/ztj-dongbao-application/ztj-dongbao-portal-web/src/main/java/com/ztj/dongbao/portal/ZtjDongBaoPortalWebApplication.java
+/Users/beihai/IdeaProject/ztj-dongbao-mall-parent-v1/ztj-dongbao-application/ztj-dongbao-portal-web/src/main/java/com/ztj/dongbao/portal/controller/studyCaptcha/HappyCaptchaController.java
+/Users/beihai/IdeaProject/ztj-dongbao-mall-parent-v1/ztj-dongbao-application/ztj-dongbao-portal-web/src/main/java/com/ztj/dongbao/portal/controller/studyCaptcha/EasyCaptchaController.java

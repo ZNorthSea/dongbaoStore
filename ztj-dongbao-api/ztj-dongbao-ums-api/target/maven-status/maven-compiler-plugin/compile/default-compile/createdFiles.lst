@@ -1,0 +1,5 @@
+com/ztj/dongbao/ums/entity/dto/UmsMemberParamDTO.class
+com/ztj/dongbao/ums/entity/response/UmsMemberLoginResponse.class
+com/ztj/dongbao/ums/entity/UmsMember.class
+com/ztj/dongbao/ums/ZtjDongBaoUmsApiApplication.class
+com/ztj/dongbao/ums/service/UmsMemberService.class

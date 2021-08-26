@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@SpringBootTest(classes = ZtjDongBaoUmsApplication.class)
+@SpringBootTest(classes = com.ztj.dongbao.ums.ZtjDongBaoUmsApplication.class)
 public class UmsMemberTest {
     @Autowired
     private UmsMemberMapper mapper;

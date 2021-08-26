@@ -28,6 +28,11 @@ public class UmsMemberController {
         return "hello";
     }
 
+    @GetMapping("/get-captcha")
+    public String getCaptcha(String captcha){
+        return "获取验证码";
+    }
+
     @PostMapping("/register")
     public ResultWrapper<Object> register(@RequestBody @Validated UmsMemberParamDTO umsMember){
         // int i = 1/0;
@@ -45,10 +50,4 @@ public class UmsMemberController {
         return umsMemberService.update(umsMember);
     }
 
-
-    // 测试token
-    @GetMapping("test-verify")
-    public String verify(String token){
-        return JwtUtil.parseToken(token);
-    }
 }

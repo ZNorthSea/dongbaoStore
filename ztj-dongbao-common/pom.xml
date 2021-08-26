@@ -16,5 +16,8 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-
+    <modules>
+        <module>ztj-dongbao-common-base</module>
+        <module>ztj-dongbao-common-util</module>
+    </modules>
 </project>
