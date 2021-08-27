@@ -24,6 +24,9 @@ public class UmsMemberServiceImpl implements UmsMemberService {
     // 用户注册
     @Override
     public ResultWrapper<Object> register(UmsMemberParamDTO umsMemberParamDTO) {
+        // 判断前端传入的验证码与Redis中存入的验证码是否一致
+        // 如果一致则进行下一步，如果不一致，则直接返回 ResultWrapper.getFailBuilder().data(null).build()
+
         // 防止重名
         Integer count = mapper.selectCountByUserName(umsMemberParamDTO.getUsername());
         System.out.println("count = " + count);

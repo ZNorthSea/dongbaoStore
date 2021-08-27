@@ -1,0 +1,34 @@
+server:
+  port: 81
+
+  ssl:
+    key-store: /Users/beihai/IdeaProject/ztj-dongbao-mall-parent-v1/ztj-dongbao-application/ca-server/src/main/resources/dongbao-alias.keystore
+    key-alias: dongbao-alias
+    key-store-type: jks
+    key-password: 123456
+
+
+
+
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ztj-dongbao?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.ztj.dongbao.ums.entity
+
+logging:
+  level:
+    com:
+      ztj:
+        dongbao:
+          ums:
+            mapper: debug

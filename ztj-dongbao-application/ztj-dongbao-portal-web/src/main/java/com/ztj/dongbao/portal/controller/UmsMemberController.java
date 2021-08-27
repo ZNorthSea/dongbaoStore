@@ -3,7 +3,6 @@ package com.ztj.dongbao.portal.controller;
 
 import com.ztj.dongbao.base.annotations.TokenCheck;
 import com.ztj.dongbao.base.result.ResultWrapper;
-import com.ztj.dongbao.common.util.JwtUtil;
 import com.ztj.dongbao.ums.entity.UmsMember;
 import com.ztj.dongbao.ums.entity.dto.UmsMemberParamDTO;
 import com.ztj.dongbao.ums.service.UmsMemberService;
@@ -30,12 +29,14 @@ public class UmsMemberController {
 
     @GetMapping("/get-captcha")
     public String getCaptcha(String captcha){
+
         return "获取验证码";
     }
 
+    // 传入验证码信息
     @PostMapping("/register")
     public ResultWrapper<Object> register(@RequestBody @Validated UmsMemberParamDTO umsMember){
-        // int i = 1/0;
+
         return umsMemberService.register(umsMember);
     }
 

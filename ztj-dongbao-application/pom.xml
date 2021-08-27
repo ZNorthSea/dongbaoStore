@@ -15,6 +15,7 @@
     <modules>
         <module>ztj-dongbao-portal-web</module>
         <module>ztj-dongbao-manager-web</module>
+        <module>ca-server</module>
     </modules>
 
     <properties>
