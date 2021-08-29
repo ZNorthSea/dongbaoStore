@@ -13,11 +13,7 @@ public class CheckUtil {
         String sign = map.get("sign");
         map.remove("sign"); // 防干扰
         String s = generatorSign(map);
-        if (s.equals(sign)){
-            return true;
-        }else {
-            return false;
-        }
+        return s.equals(sign);
     }
 
     // 根据map生成签名
